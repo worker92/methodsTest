@@ -1,0 +1,33 @@
+// numbersMethods.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include "pch.h"
+#include <iostream>
+
+using namespace std;
+void sum(int a , int b){
+	cout << "Sum of " << a << " & " << b << " is : "<< (a + b) << endl;
+}
+void difference(int a, int b) {
+	cout << "Difference of " << a << " & " << b << " is : " << (a - b) << endl;
+}
+int product(int a, int b) {
+	int product = a * b;
+	return product;
+}
+int main()
+{
+	int input1, input2, output3;
+
+    cout << "Enter two numbers :\n"; 
+	cin >> input1 >> input2;
+
+	sum(input1, input2);
+	difference(input1, input2);
+	
+	output3 = product(input1, input2);
+
+	cout << "Product of " << input1 <<" & " << input2 << " is : " << output3 << endl;
+
+	return 0;
+}
